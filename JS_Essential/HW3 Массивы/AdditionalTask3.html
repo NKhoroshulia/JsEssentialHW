@@ -1,0 +1,26 @@
+<!--
+    Cоздайте массив размерностью N элементов, выведите все элементы массива в обратном порядке.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Additional Task2</title>
+</head>
+<body>
+    <script>
+        let arr = [1, 2, 3, 4];
+
+        let input = prompt("Введите новый элемент массива:", "");
+
+        while (input != null) {
+            arr = arr.concat(input);
+            input = prompt("Введите новый элемент массива:", "");
+        }
+
+        document.write("Массив в нормальном порядке: " + arr.join(", ") + "<br/><hr/>");
+
+        document.write("Массив в обратном порядке: " + arr.reverse().join(", ") + "<br/><hr/>");
+    </script>
+</body>   
+</html>

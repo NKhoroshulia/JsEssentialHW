@@ -1,0 +1,63 @@
+<!--
+    Создайте четыре функции для арифметических действий: (Add - сложение, Sub - вычитание, 
+    Mul - умножение,  Div - деление). Каждая функция должна принимать два параметра и выводить
+    на экран результат вычисления. Функция деления должна делать проверка деления на ноль.
+    Пользователь вводит значения, над которыми хочет произвести операцию и выбрать саму операцию. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task4.1</title>
+    <script>
+        function Add(a, b) {
+            return a + b;
+        }
+
+        function Sub(a, b) {
+            return a - b;
+        }
+
+        function Mul(a, b) {
+            return a * b;
+        }
+
+        function Div(a, b) {
+            if (b != 0) {
+                return a / b;
+            } else {
+                document.write("Делить на 0 нельзя");
+            }
+        }
+
+        do {
+            let operand1 = +prompt("Введите первое число:");
+            let operand2 = +prompt("Введите второе число: ");
+            let sign = prompt("Введите знак арифметической операции: + , - , * , / ");
+            let result;
+
+            switch (sign) {
+                case "+":
+                    result = Add(operand1, operand2);
+                    break;
+                case "-":
+                    result = Sub(operand1, operand2);
+                    break;
+                case "*":
+                    result = Mul(operand1, operand2);
+                    break;
+                case "/":
+                    result = Div(operand1, operand2);
+                    break;
+            }
+
+            if (result != undefined)
+                document.write("<p>" + operand1 + " " + sign + " " + operand2 + " = " + result);
+
+            repeater = confirm("Провести расчеты еще раз ?")
+        } while (repeater);
+    </script>
+</head>
+<body>
+</body>
+</html>

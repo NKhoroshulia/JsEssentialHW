@@ -1,0 +1,46 @@
+<!--
+    Требуется: создать массив размерностью N элементов, заполнить его 
+    произвольными целыми значениями. Вывести наибольшее значение массива,
+    наименьшее значение массива, общую сумму всех элементов, среднее арифметическое
+    всех элементов, вывести все нечетные значения.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task3.1</title>
+    </head>
+<body>
+    <script>
+        let arr = [90, 354, -4, 55, 43, -444, 213, -543];
+        let sum = 0;
+        let summ = 0;
+        let max = arr[0];
+        let min = arr[0];
+
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            summ += arr[i];
+
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+
+            if (arr[i] < min) { 
+                min = arr[i];
+            }
+
+            if (arr[i] % 2 == 1) {
+                document.write("Элемент по индексу " + i + " со значением " + arr[i] + " нечетный");
+                document.write("<br/>");
+            }
+        }
+
+        summ = summ / arr.length;
+        document.write("<hr/>Среднее арифметическое массива = " + summ + "<br/><hr/>");
+        document.write("Сумма всех элементов массива = " + sum + "<br/><hr/>");
+        document.write("Найменьшее значение массива = " + min + "<br/><hr/>");
+        document.write("Найболшее значение массива = " + max + "<br/><hr/>");
+    </script>
+</body>
+</html>

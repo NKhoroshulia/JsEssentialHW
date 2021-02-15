@@ -1,0 +1,51 @@
+<!--
+    Создать объект "Документ", в котором определить свойства "Заголовок, Тело, Футер, Дата".
+    Создать в объекте вложенный объект - "Приложение". Создать в объекте "Приложение", вложенные свойства,
+    "Заголовок, Тело, Футер, Дата". Создать методы для заполнения и отображения документа.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        let doc = {
+            header: "Name",
+            body: "Text",
+            footer: "Basement",
+            date: "Date",
+            
+            application: {
+                header: "Name",
+                body: "Text",
+                footer: "Basement",
+                date: "Date"
+            },
+
+            edit: function () {
+                let a = prompt("Введите заголовок", "");
+                let b = prompt("Введите текст", "");
+                let c = prompt("Введите подпись", "");
+                let d = prompt("Введите дату", "");
+                
+                doc.application.name = a;
+                doc.application.body = b;
+                doc.application.footer = c;
+                doc.application.date = d;
+            },
+
+            show: function () {
+                document.write(doc.application.name + "<br>");
+                document.write(doc.application.body + "<br>");
+                document.write(doc.application.footer + "<br>");
+                document.write(doc.application.date);
+            }
+        };
+
+        doc.edit();
+        doc.show();
+    </script>
+</body>
+</html>

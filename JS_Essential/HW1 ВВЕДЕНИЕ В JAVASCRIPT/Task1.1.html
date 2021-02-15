@@ -1,0 +1,74 @@
+<!--
+    Создайте три меременные x = 6, y = 15, z = 4:
+    Выполните и отобразите результат следующих операций для этих переменных:
+        х += y - x++ * z;
+        z = --x - y * 5;
+        y /= x + 5 % z;
+        z = x++ + y * 5;
+        х = y - x++ * z;
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task1.1</title>
+    </head>
+<body>
+    <script>
+        let x = 6;
+        let y = 15;
+        let z = 4;
+        let result;
+
+        result = x += y - x++ * z;
+        document.write("х += y - x++ * z = " + result + "<br/><hr/>");
+
+        result = z = --x - y * 5;
+        document.write("z = --x - y * 5 = " + result + "<br/><hr/>");
+
+        result = y /= x + 5 % z;
+        document.write("y /= x + 5 % z = " + result + "<br/><hr/>");
+
+        result = z = x++ + y * 5;
+        document.write("z = x++ + y * 5 = " + result + "<br/><hr/>");
+
+        result = x = y - x++ * z;
+        document.write("х = y - x++ * z = " + result + "<br/><hr/>");
+
+        x = 6;
+        y = 15;
+        z = 4;
+
+        result = x += y - x++ * z;
+        document.write("х += y - x++ * z = " + result + "<br/><hr/>");
+
+        x = 6;
+        y = 15;
+        z = 4;
+
+        result = z = --x - y * 5;
+        document.write("z = --x - y * 5 = " + result + "<br/><hr/>");
+
+        x = 6;
+        y = 15;
+        z = 4;
+
+        result = y /= x + 5 % z;
+        document.write("y /= x + 5 % z = " + result + "<br/><hr/>");
+
+        x = 6;
+        y = 15;
+        z = 4;
+
+        result = z = x++ + y * 5;
+        document.write("z = x++ + y * 5 = " + result + "<br/><hr/>");
+
+        x = 6;
+        y = 15;
+        z = 4;
+
+        result = x = y - x++ * z;
+        document.write("х = y - x++ * z = " + result + "<br/><hr/>");
+    </script>
+</body>
+</html>

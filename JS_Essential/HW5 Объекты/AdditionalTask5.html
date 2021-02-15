@@ -1,0 +1,33 @@
+<!--
+    Создать объект "Менеджер" с помощью блока инициализации, задать свойства "Имя, Фамилия, возраст...".
+    Создать объект "Секретарь" с помощью конструктора, задать свойства "Имя, Фамилия, возраст...".
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AdditionalTask5</title>
+</head>
+<body>
+    <script>
+        let Manager = {
+            firstName: "Andrey",
+            lastName: "Petrov",
+            age: 25, 
+        };
+
+        let accountant = new Object();
+        accountant.firstName = "Nadia";
+        accountant.lastName = "Petrova";
+        accountant.age = "23";
+
+        document.write(`Имя менеджера: ${Manager.firstName}<br/>`);
+        document.write(`Фамилия менеджера: ${Manager.lastName}<br/>`);
+        document.write(`Возраст Менеджера: ${Manager.age}<br/><hr/>`);
+
+        document.write(`Имя секретаря: ${accountant.firstName}<br/>`);
+        document.write(`Фамилия секретаря: ${accountant.lastName}<br/>`);
+        document.write(`Возраст секретаря: ${accountant.age}<br/>`);
+    </script>
+</body>
+</html>

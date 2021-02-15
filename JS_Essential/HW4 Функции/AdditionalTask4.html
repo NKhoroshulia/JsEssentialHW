@@ -1,0 +1,29 @@
+<!--
+    Создайте метод с именем Calculate, который принимает в качестве параметров три 
+    целочисленных значения и выводит на экран среднее арифметическое этих параметров.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AdditionalTask4</title>
+    <script>
+        let a;
+        let b;
+        let c;
+        let result;
+
+        function Calculate(a, b, c) {
+            a = +prompt("Введите первое целое число :");
+            b = +prompt("Введите второе целое число :");
+            c = +prompt("Введите третье целое число :");
+            result = (a + b + c) / arguments.length;
+            document.write("Среднее арифметическое = " + result);
+        }
+
+        Calculate(a, b, c);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+    Напишите функцию, которая будет принимать число и определять:
+    1. Является ли введенное число положительным или отрицательным.
+    2. Является ли оно простым.
+    3. Делится ли оно на 2, 5, 3, 6, 9 без остатка.
+-->
+<!DOCTYPE html>
+<htmal>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            function primenumber(n) {
+                if (n > 0) {
+                    document.write("Число положительное <br />");
+                } else {
+                    document.write("Число отрицательное <br />");
+                }
+
+                if (n % 2 == 0) {
+                    document.write("Число делится без остатка на 2 <br />");
+                }
+
+                if (n % 5 == 0) {
+                    document.write("Число делится без остатка на 5 <br />");
+                }
+
+                if (n % 3 == 0) {
+                    document.write("Число делится без остатка на 3 <br />");
+                }
+
+                if (n % 6 == 0) {
+                    document.write("Число делится без остатка на 6 <br />");
+                }
+
+                if (n % 9 == 0) {
+                    document.write("Число делится без остатка на 9 <br />");
+                }
+
+                if (n == 1) {
+                    document.write("Число не простое <br />");
+                }
+                if (n > 1) {
+                    for (var d = 2; d * d <= n; d++) {
+                        if (n % d == 0) {
+                            document.write("Число не простое");
+                        } else {
+                            document.write("Число простое");
+                        }
+                    }
+                }
+            }
+            let operand = +prompt("Введите число: ");
+            primenumber(operand);
+        </script>
+    </head>
+
+    <body>
+    </body>
+</htmal>
